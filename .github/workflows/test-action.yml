@@ -9,6 +9,12 @@ jobs:
         uses: actions/checkout@v3
         with:
           persist-credentials: false
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install deps
+        run: npm i
       - name: Start Patch
         uses: ./
         with:

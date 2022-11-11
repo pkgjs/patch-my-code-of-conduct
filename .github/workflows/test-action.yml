@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  main_job:
+    runs-on: ubuntu-latest
+    name: Test Action
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Start Patch
+        uses: ./
+        with:
+          base_path: './template/base.md'
+          patch_path: './template/patch'
+          output_path: './CODE_OF_CONDUCT.md'

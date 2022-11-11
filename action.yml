@@ -1,0 +1,15 @@
+name: 'Code of Conduct'
+description: 'Generates a Code of Conduct with a prefix and apply necessary patches'
+inputs:
+  base_template_path:
+    description: 'Path of the base markdown file'
+    required: true
+  patch_file_path:
+    description: 'Path of the patch to be applied to the output file'
+    required: true
+  output_template_path:
+    description: 'Path of the generated markdown file'
+    required: true
+runs:
+  using: 'node18'
+  main: 'lib/index.js'

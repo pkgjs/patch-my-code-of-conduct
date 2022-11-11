@@ -1,0 +1,24 @@
+{
+  "name": "code-of-conduct",
+  "version": "1.0.0",
+  "description": "A tool for generating a code of conduct with patches",
+  "main": "lib/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node lib/index.js",
+    "test": "vitest"
+  },
+  "keywords": [
+    "Code of Conduct"
+  ],
+  "author": "Yagiz Nizipli <yagiz@nizipli.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "vitest": "^0.25.1"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  }
+}

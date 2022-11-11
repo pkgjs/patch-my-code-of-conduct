@@ -11,5 +11,5 @@ inputs:
     description: 'Path of the generated markdown file'
     required: true
 runs:
-  using: 'node18'
+  using: 'node16'
   main: 'lib/index.js'

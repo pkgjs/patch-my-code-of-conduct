@@ -13,3 +13,11 @@ jobs:
           base_path: './template/base.md'
           patch_path: './template/patch'
           output_path: './CODE_OF_CONDUCT.md'
+      - uses: gr2m/create-or-update-pull-request-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          body: "Applied the patch to the base Code of Conduct."
+          branch: actions/patch-code-of-conduct  # Custom branch *just* for this Action.
+          commit-message: 'doc: update Code of Conduct'
+          title: 'doc: update Code of Conduct'

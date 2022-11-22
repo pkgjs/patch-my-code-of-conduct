@@ -29,7 +29,13 @@ async function apply_patch(base_path, patch_path, output_path) {
     throw new Error(`patch_path (${patch_path}) does not exist`)
   }
 
-  await execSync(`patch ${output_path} ${patch_path} -R`);
+  await execSync(`patch -i ${patch_path} ${output_path} -R --no-backup-if-mismatch`);
+
+  const original_file = output_path + '.orig'
+  // Delete `output.md.orig` file, if exists
+  if (fs.existsSync(original_file)) {
+    fs.rmSync(original_file, { force: true })
+  }
 }
 
 module.exports = { apply_patch }

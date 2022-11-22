@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node lib/index.js",
-    "test": "vitest"
+    "test": "vitest",
+    "build":  "ncc build lib/index.js -o dist"
   },
   "keywords": [
     "Code of Conduct"
@@ -15,6 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.11.9",
+    "@vercel/ncc": "^0.34.0",
     "vitest": "^0.25.1"
   },
   "dependencies": {

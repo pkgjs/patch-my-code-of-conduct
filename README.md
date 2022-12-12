@@ -23,7 +23,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Start Patch
-        uses: anonrig/patch-my-code-of-conduct@v1.0.2
+        uses: pkgjs/patch-my-code-of-conduct@v1.0.3
         with:
           base_file_path: './base.md'
           patch_file_path: './patch'

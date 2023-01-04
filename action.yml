@@ -1,9 +1,13 @@
 name: 'Code of Conduct'
 description: 'Generates a Code of Conduct with a prefix and apply necessary patches'
 inputs:
-  base_file_path:
-    description: 'Path of the base markdown file'
+  base_url:
+    description: 'The url to be used for the base'
     required: true
+  template_url:
+    description: URL to be used for the template of the CoC
+    default: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md
+    required: false
   patch_file_path:
     description: 'Path of the patch to be applied to the output file'
     required: true

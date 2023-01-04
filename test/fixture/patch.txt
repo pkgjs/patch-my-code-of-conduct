@@ -1,11 +1,10 @@
 --- /dev/null	2022-11-11 18:00:48
 +++ output.md	2022-11-11 18:00:32
-@@ -43,7 +43,7 @@
-
- ---
-
--# CHANGED THE TITLE OF COC
-+# Contributor Covenant Code of Conduct
-
+@@ -1,6 +1,6 @@
+ This is the beginning of our Code of Conduct.
+ 
+-# Contributor Covenant Code of Conduct
++# CHANGED_THE_TITLE
+ 
  ## Our Pledge
-
+ 

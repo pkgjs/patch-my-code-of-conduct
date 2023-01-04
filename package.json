@@ -14,9 +14,9 @@
   "author": "Yagiz Nizipli <yagiz@nizipli.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^18.11.13",
+    "@types/node": "^18.11.18",
     "@vercel/ncc": "^0.36.0",
-    "vitest": "^0.25.7"
+    "vitest": "^0.26.3"
   },
   "dependencies": {
     "@actions/core": "^1.10.0",

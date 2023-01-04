@@ -25,7 +25,7 @@ jobs:
       - name: Start Patch
         uses: pkgjs/patch-my-code-of-conduct@v1.0.3
         with:
-          base_file_path: './base.md'
+          base_url: 'https://raw.githubusercontent.com/openjs-foundation/cross-project-council/240d047d4f2cb135e6c1ce64b036af7aaf639a01/meetings/2023/2023-01-03.md'
           patch_file_path: './patch'
           output_file_path: './CODE_OF_CONDUCT.md'
       - uses: gr2m/create-or-update-pull-request-action@v1

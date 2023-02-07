@@ -9,13 +9,10 @@ const { execSync } = __nccwpck_require__(7718)
 const { fetch } = __nccwpck_require__(1773)
 
 async function apply_patch(base_url, template_url, patch_path, output_path) {
-  const base_response = await fetch(base_url);
-
-  if (base_response.status !== 200 && base_response.status !== 201) {
-    throw new Error(`base url response got ${base_url.status} status code. expected 200 or 201.`)
+  if (!fs.existsSync(base_url)) {
+    throw new Error(`base_url (${base_url}) does not exist`)
   }
-  const base_text = await base_response.text();
-
+  const base_text = fs.readFileSync(base_url, 'utf-8');
   const template_response = await fetch(template_url);
 
   if (template_response.status !== 200 && template_response.status !== 201) {

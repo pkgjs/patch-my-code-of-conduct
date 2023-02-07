@@ -1,10 +1,12 @@
---- /dev/null	2022-11-11 18:00:48
-+++ output.md	2022-11-11 18:00:32
-@@ -1,6 +1,6 @@
- This is the beginning of our Code of Conduct.
+--- test/fixture/output.md	2023-02-07 13:42:23
++++ ./test/output-new.md	2023-02-07 13:43:41
+@@ -43,7 +43,7 @@
  
--# Contributor Covenant Code of Conduct
-+# CHANGED_THE_TITLE
+  ---
+  
+-# CHANGED THE TITLE OF COC
++# Contributor Covenant Code of Conduct
  
  ## Our Pledge
  
+

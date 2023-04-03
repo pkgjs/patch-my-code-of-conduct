@@ -23,7 +23,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Start Patch
-        uses: pkgjs/patch-my-code-of-conduct@v1.0.3
+        uses: pkgjs/patch-my-code-of-conduct@v1.3.0
         with:
           base_url: './BASE.md'
           patch_file_path: './patch'
@@ -36,4 +36,21 @@ jobs:
           branch: actions/patch-code-of-conduct  # Custom branch *just* for this Action.
           commit-message: 'doc: update Code of Conduct'
           title: 'doc: update Code of Conduct'
+```
+
+## Useful Information
+
+### Generate patch file
+
+- Generate a `premable+template.md`
+- Generate a `original-expected.md` file
+
+```bash
+diff -Naur preamble+template.md original-expected.md > patch
+```
+
+### Running patching script
+
+```
+patch -i patch preamble+template.md -o expected.md --no-backup-if-mismatch
 ```

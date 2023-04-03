@@ -23,7 +23,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Start Patch
-        uses: pkgjs/patch-my-code-of-conduct@v1.2.0
+        uses: pkgjs/patch-my-code-of-conduct@v1.3.0
         with:
           base_url: './BASE.md'
           patch_file_path: './patch'

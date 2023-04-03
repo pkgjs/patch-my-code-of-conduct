@@ -2,3 +2,4 @@ node_modules
 package-lock.json
 test/fixture/output.md
 test/openjsf/tmp.md
+test/**/*.rej
